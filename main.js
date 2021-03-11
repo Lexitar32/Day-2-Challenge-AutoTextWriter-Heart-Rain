@@ -13,20 +13,16 @@ function writeText() {
 }
 
 function createHeart() {
-  const nigeria = document.createElement('div');
-  nigeria.classList.add('nigeria');
+  const heart = document.createElement('div');
+  heart.classList.add('heart');
 
-  nigeria.style.left = Math.random() * 100 + 'vw';
+  heart.style.left = Math.random() * 100 + 'vw';
 
-  nigeria.style.animationDuration = Math.random() * 2 + 3 + 's';
+  heart.style.animationDuration = Math.random() * 2 + 3 + 's';
 
-  nigeria.innerText = '❤️️';
+  heart.innerText = '❤️️';
 
-  document.body.appendChild(nigeria);
-
-  // setTimeout(() => {
-  //   nigeria.remove();
-  // }, 5000);
+  document.body.appendChild(heart);
 }
 
 setInterval(() => {
